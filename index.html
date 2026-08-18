@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE4</title>
+    <link rel="shortcut icon" href="icone/Chrisbanks2-Cold-Fusion-Hd-Umbrella-corp.128.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="musica" loop>
+    <source src="audio/Resident Evil 4 Save Theme (Extended).mp3" type="audio/mpeg">
+</audio>
+
+<button id="botao-musica" onclick="toggleMusica()">
+    🔊 MÚSICA: OFF
+</button>
+
+<script>
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botao-musica");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+            botao.textContent = "🔊 MÚSICA: ON";
+        } else {
+            musica.pause();
+            botao.textContent = "🔇 MÚSICA: OFF";
+        }
+    }
+</script>
+    <h1>Resident Evil 4</h1>
+    <hr>
+    <img src="imagens/capa2.jpg" alt="capa do jogo">
+    <main>
+      <section>
+      <h1>Jogabilidade</h1>
+    <p>O jogador controla o protagonista Leon S. Kennedy a partir de uma perspectiva em terceira pessoa. A jogabilidade centra-se na ação e tiroteios envolvendo multidões de inimigos em grandes áreas abertas. A câmera é colocada atrás de Leon, e amplia para uma visão sobre o ombro quando se aponta uma arma. Ao contrário dos jogos anteriores da série, há a adição de uma mira laser que adiciona uma nova profundidade ao apontar, permitindo que o jogador mire em várias direções e facilmente mude sua colocação em qualquer momento. Balas afetam os inimigos especificamente onde são atingidos: tiros nos pés podem fazer os inimigos tropeçar, enquanto tiros nos braços podem fazer eles largarem suas armas. utro novo aspecto de Resident Evil 4 é a inclusão de controles sensíveis ao contexto. Com base na situação, o jogador pode interagir com os aspectos de seu ambiente: derrubar uma escada, saltar de uma janela ou esquivar-se de um ataque inimigo. Há também eventos em tempo real, no qual o jogador deve pressionar os botões indicados na tela para executar ações como correr de uma pedra caindo ou lutar um inimigo para se manter vivo. Este recurso é incorporado muitas vezes em muitas batalhas contra os chefes do jogo, onde o jogador deve evitar ataques que causam morte instantânea.</p>
+    </section>
+    <hr>
+    <section>
+        <h1>Enredo</h1>
+    <p>Seis anos após os acontecimentos de Resident Evil 2, o ex-policial Leon Scott Kennedy é enviado em uma missão para resgatar Ashley Graham, filha do presidente dos Estados Unidos, que foi raptada por uma seita misteriosa.[13] Ele viaja para uma aldeia rural na Europa, onde encontra um grupo de moradores violentos que dedicam suas vidas para os Los Illuminados ( "os iluminados" em espanhol), o culto que sequestrou Ashley.
+
+Na vila, Leon é capturado por seu chefe, Bitores Mendez, que injeta nele um parasita controlador de mentes conhecido como Las Plagas.[14] Ele é mantido amarrado em um cativeiro juntamente com Luis Sera, um ex-pesquisador dos Illuminados.[15] Os dois trabalham juntos para escapar, mas em seguida seguem caminhos separados. Leon descobre que Ashley está sendo mantida presa em uma capela, e consegue resgatá-la.[16] Ambos fogem do local após Osmund Saddler, líder da seita, revelar seus planos para usar as Plagas injetadas em Ashley para causar um desastre nos Estados Unidos quando ela retornar.
+
+Leon e Ashley tentam se refugiar dentro do castelo de Ramon Salazar, um servo de Saddler, mas são atacados por mais Illuminados. Os dois são separados um do outro por armadilhas de Salazar. Enquanto isso, Sera procura por pílulas para retardar a infecção de Leon e Ashley, e, em seguida, acha uma amostra de plaga. Ele traz os dois itens para Leon, mas é morto por Saddler, que toma a amostra, enquanto as pílulas para suprimir a infecção permanecem na posse de Leon.  Ainda no castelo, ele se encontra brevemente com Ada Wong, uma mulher de seu passado que o apoiou em toda a sua missão. Por fim, ele confronta e mata Salazar. Leon então descobre que Ashley foi levada para um centro de pesquisa em uma ilha vizinha e vai encontrá-la.
+
+Leon descobre depois que um de seus ex-companheiros de seus anos de formação, Jack Krauser, está vivo e é responsável pelo sequestro de Ashley.  Ada e Krauser estão trabalhando juntos para alguém relacionado a Umbrella, que Krauser pretende para matar Saddler quando ele tiver chance. Este descobre os planos, e ele ordena a Krauser para matar Leon, sabendo que não importa qual deles morra, pois ele iria se beneficiar. Após derrotar Krauser, Leon resgata Ashley, e eles removem as plagas de seus corpos usando um dispositivo radioterápico especializado. Leon confronta Saddler depois de ver Ada como seu refém. Com a ajuda dela, Leon mata Saddler e Ada leva a amostra. Ela então foge do complexo em um helicóptero, deixando Leon e Ashley para escaparem em seu jet-ski enquanto a ilha explode.</p>
+   <h2>Clique aqui embaixo e explore os personagens, armas e outras coisas mais !!!</h2>
+    <a href="explorar.html" class="btn-explorar">Explorar</a>   
+    </section>    
+    </main>
+</body>
+</html>

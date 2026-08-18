@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploração</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/Chrisbanks2-Cold-Fusion-Hd-Umbrella-corp.128.png" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="musica" loop>
+    <source src="audio/Resident Evil 4 Save Theme (Extended).mp3" type="audio/mpeg">
+</audio>
+
+<button id="botao-musica" onclick="toggleMusica()">
+    🔊 MÚSICA: OFF
+</button>
+
+<script>
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botao-musica");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+            botao.textContent = "🔊 MÚSICA: ON";
+        } else {
+            musica.pause();
+            botao.textContent = "🔇 MÚSICA: OFF";
+        }
+    }
+</script>
+    <div class="titulo">
+        <h1>Personagens</h1>
+        <a href="index.html">Voltar</a>
+    </div>
+    <div class="cards">
+
+    <div class="card">
+        <img src="imagens/capa.webp" alt="leon">
+        <h2>Leon S. Kennedy</h2>
+        <p>O policial que teve de enfrentar zumbis na infectada Raccoon City em seu primeiro dia de serviço agora é um agente do governo, contratado para resgatar a filha do presidente dos EUA, que foi sequestrada e levada a um pequeno e aparentemente pacífico vilarejo localizado em algum lugar na Europa. Porém, Leon se vê no meio de uma terrível conspiração envolvendo a garota e velhos conhecidos seus e, para escapar, deverá enfrentar mais uma vez criaturas modificadas por uma misteriosa infecção.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/ashley.webp" alt="ashley">
+        <h2>Ashley Graham</h2>
+        <p>A filha do presidente dos EUA acabou sequestrada e levada até o vilarejo, como parte inicial de um plano arquitetado por Osmund Saddler. Ashley é extremamente mimada e exige cuidados especiais. À medida que Leon avança pelo local, a garota pode acabar sendo até mesmo um obstáculo para ele, que deve ao mesmo tempo deixá-la longe dos inimigos e tentar manter-se vivo para tirá-los de lá.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/ada.webp" alt="ada">
+        <h2>Ada Wong</h2>
+        <p>A espiã que aparentemente havia morrido em Raccoon City volta com um objetivo específico em relação às Plagas que são utilizadas no local. Munida de equipamentos de alta tecnologia e com um grande preparo físico, a espiã chega a auxiliar Leon em alguns momentos, sem deixar claro sua posição em relação ao agente.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/luis.webp" alt="luis">
+        <h2>Luis Sera</h2>
+        <p>O espanhol aparece inicialmente como um prisioneiro de Saddler, contando para Leon que também é apenas um ex-policial. Porém, Luis sabe mais sobre as Plagas do que aparenta, e possui um objetivo determinado em relação a elas.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/bitorez.webp" alt="bitorez">
+        <h2>Bitores Mendez</h2>
+        <p>Bitores é o chefe do vilarejo e exerce certa autoridade sobre os Ganados da região. É extremamente alto e dotado de grande força, o que faz com que os esforços de Leon para derrotá-lo sejam praticamente inúteis.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/sadler.webp"alt="sadler">
+        <h2>Osmund Sadler</h2>
+        <p>É o líder do culto Los Illuminados e a grande mente por trás do plano que visava inicialmente o sequestro de Ashley Graham. Lord Saddler, como é chamado por seus subordinados, possui total controle sobre as Plagas e sobre os outros humanos infectados, os Ganados.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/salazar.webp" alt="salazar">
+        <h2>Ramon Salazar</h2>
+        <p>O bizarro dono do castelo que abriga o culto Los Illuminados tem apenas 20 anos e é o último membro de sua nobre família. Está sempre ao lado de seus guarda-costas e é extremamente provocador. A existência das Plagas está ligada a ele e ao imenso castelo, fazendo-o cedê-las para Saddler utilizá-las como parte de seu plano.</p>
+    </div>
+
+    <div class="card">
+        <img src="imagens/krauser.webp" alt="krauser">
+        <h2>Jack Krauser</h2>
+        <p>Um velho conhecido de Leon, dado como morto anos antes, também está nas redondezas do vilarejo. Foi ele o responsável por levar Ashley ao seu cativeiro, porém sua lealdade aos Los Illuminados é questionada, já que ele aparentemente está envolvido com outras pessoas.</p>
+    </div>
+</div>
+</body>
+</html>
