@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/Chrisbanks2-Cold-Fusion-Hd-Umbrella-corp.128.png" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <audio id="musica" loop>
+    <source src="audio/Resident Evil 4 Save Theme (Extended).mp3" type="audio/mpeg">
+</audio>
+
+<button id="botao-musica" onclick="toggleMusica()">
+    🔊 TRILHA SONORA: OFF
+</button>
+
+<script>
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botao-musica");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+            botao.textContent = "🔊 TRILHA SONORA: ON";
+        } else {
+            musica.pause();
+            botao.textContent = "🔇 TRILHA SONORA: OFF";
+        }
+    }
+</script>
+    <div class="categoria-armas">     
+    <a href="index.html" class="btn-explorar2">VOLTAR A PÁGINA PRINCIPAL</a>
+    <a href="explorar.html" class="btn-explorar2">VER PERSONAGENS</a>
+    <a href="mapas.html" class="btn-explorar2">VER MAPAS DO JOGO</a>
+    <h2>Pistolas</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="imagens/handgun.jpg" alt="Handgun">
+            <h2>Handgun</h2>
+            <p>A arma básica do jogo, que o acompanha a partir do princípio. É considerava fraca, porém é muito útil para inimigos que estejam sozinhos e para poupar munição, já que balas para ela são encontradas aos montes.</p>
+        </div>
+
+        <div class="card">
+            <img src="imagens/punisher.jpg" alt="Punisher">
+            <h2>Punisher</h2>
+            <p>Uma versão melhorada da Handgun, que pode ser comprada ou conquistada de graça encontrar todos os medalhões azuis no desafio do Merchant. Seus grandes pontos positivos são o fato de suportar maior quantidade de munição, além de poder atravessar inimigos (piercing).</p>
+        </div>
+
+        <div class="card">
+            <img src="imagens/red9.jpg" alt="Red9">
+            <h2>Red9</h2>
+            <p>Uma arma de aspecto velho, de carregamento lento e poder muito alto. É a arma utilizada por Luis e pode ser comprada no Merchant por 14 mil pts durante o capítulo 2-2.Você pode comprar um stock específico para melhorar o manejo dessa pistola</p>
+        </div>
+
+        <div class="card">
+            <img src="imagens/blacktail.jpg" alt="Blacktail">
+            <h2>Blacktail</h2>
+            <p>É menos potente que a Red 9, mas é melhor que as demais desse tipo. Suas vantagens são a alta velocidade de recarga e de tiro, tornando-a ideal para grupos de Ganados, por exemplo. Não costuma ser muito escolhida ao decorrer do jogo e pode ser comprada no Merchant por 24 mil pts no capítulo 3-1.</p>
+        </div>
+    </div>
+    <hr>
+</div>
+       <div class="categoria-armas">
+        <h2>Espingardas</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/shotgun.jpg" alt="shotgun">
+                <h2>Shotgun</h2>
+                <p>Leon a encontra na casa onde se refugia dos Ganados, logo ao entrar em Pueblo. Sua munição é comum, porém em quantidades moderadas. É extremamente potente quando se atira perto dos inimigos, mas perde muito em força quando o alvo está distante, o que pode ser melhorado com o upgrade especial. É ótima contra grupos e inimigos de grande porte, como Novistadores e o Dr. Salvador.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/riot_gun.jpg" alt="riot gun">
+                <h2>Riot Gun</h2>
+                <p>Uma versão melhorada da Shotgun que pode ser comprada a partir da entrada de Leon na área do castelo de Salazar, por 32 mil pts. Possui melhor poder em longa distância do que sua antecessora, mas, de resto, acaba ficando com as mesmas características da Shotgun.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/striker.jpg" alt="striker">
+                <h2>Striker</h2>
+                <p>A última versão de Shotgun pode ser comprada no Merchant por 43 mil pts. É a melhor em praticamente todos os aspectos, exceto longa distância. Devido ao seu importante uso e grande munição, é normalmente carregada até o fim do game. Seu upgrade especial a confere até 100 balas carregadas.</p>
+            </div>
+        </div>
+        <hr>
+       </div>
+
+       <div class="categoria-armas">
+        <h2>Rifles</h2>
+
+        <div class="cards">
+               <div class="card">
+               <img src="imagens/rifle.jpg" alt="rifle">
+               <h2>Rifle</h2>
+               <p>Uma versão simples à base de madeira, que acaba não sendo muito usada durante o jogo por pouca munição e longo tempo de carregamento entre um tiro e outro. Porém, sua mira acaba a tornando boa opção para certos chefes e inimigos que estejam distantes. Pode ser associado com uma mira telescópica (scope) para aumentar o alcance da mira, além do infrared scope, para visualização infravermelha (usado para enfrentar os Regeneradores). Comprada com o Merchant, a arma custa 12 mil pts.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/rifle_semi-auto.jpg" alt="semi">
+                <h2>Rifle Semi-Automático</h2>
+                <p>É uma versão melhorada do Rifle em todos os aspectos possíveis: poder e velocidade de fogo e de recarregamento. Ideal para chefes e inimigos distantes. Pode ser associado com uma mira telescópica (scope) para aumentar o alcance da mira, além do infrared scope, para visualização infravermelha (usado para enfrentar os Regeneradores). Ao ser comprada pelo Merchant a partir do capítulo 3-1, a arma custa 35 mil pts.</p>
+            </div>
+        </div>
+        <hr>
+       </div>
+         
+       <div class="categoria-armas">
+        <h2>Metralhadoras</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/tmp.jpg" alt="tmp">
+                <h2>TMP</h2>
+                <p>Uma arma automática, capaz de disparar vários tiros seguidamente com velocidade extremamente alta. Pode ser comprada com o Merchant logo no primeiro encontro, custando 15 mil pts. Não possui grande poder de fogo, mas é eficaz contra inimigos mais fracos ou para afastar grandes grupos. Pode ser associada a um stock específico, que melhora o manejo dessa arma.</p>
+            </div>
+        
+        <div class="card">
+            <img src="imagens/custom_tmp.jpg" alt="alternativa">
+            <h2>Custom TMP</h2>
+            <p>Arma exclusiva de HUNK no minigame Mercenaries. É muito semelhante à TMP do jogo normal, sendo uma arma muito rápida. É a única arma presente no inventário de HUNK, além de algumas granadas e Sprays.</p>
+        </div>
+        </div>
+        <hr>
+       </div>
+
+    <div class="categoria-armas">
+        <h2>Magnuns</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/broken_butterfly.jpg" alt="broken">
+                <h2>Broken Butterfly</h2>
+                <p>A primeira Magnum conquistada no jogo chega a ser bem efetiva contra inimigos de grande dificuldade, como alguns chefes. Seu poder é muito alto, porém a munição é rara e o carregamento pode comprometer a sua estratégia. Essa arma pode ser comprada com o Merchant a partir do capítulo 3-1 por 38 mil pts, mas também pode ser encontrada no castelo, na pequena sala trancada perto da fonte (você precisará da ajuda de Ashley para obtê-la).</p>
+            </div>
+        
+        <div class="card">
+            <img src="imagens/killer7.jpg" alt="killer">
+            <h2>Killer 7</h2>
+            <p>Homenageando um jogo através do nome, essa arma possui maior velocidade que a antecessora, porém fica devendo em poder de fogo e por não possuir upgrade especial. Também valem as mesmas regras: economize munição o máximo que puder. Pode ser comprada com o Merchant a partir do capítulo 5-1,  custando 77.700 pts.</p>
+        </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="categoria-armas">
+        <h2>Armas Especiais</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/matilda.jpg" alt="matilda">
+                <h2>Matilda</h2>
+                <p>A poderosa Matilda só pode ser comprada após terminar o jogo uma vez. Não chega a ser muito forte, mas dispara 3 tiros por vez, sendo ideal para Ganados e outros monstros mais fracos. Com os upgrades, ela se torna uma arma que vale a pena de ser obtida, podendo chegar à capacidade de 100 balas e a uma alta velocidade.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/handcannon.jpg" alt="cannon">
+                <h2>HandCannon</h2>
+                <p>Em termos de potência, é a melhor arma possível de se ter no jogo, um verdadeiro “canhão de mão”, como o nome sugere. Pode ser comprada ao conquistar 5 estrelas com todos os personagens em cada cenário do modo Mercenaries, algo difícil, porém, que vale pelo resultado. Seus upgrades incluem poder de fogo elevadíssimo e até munição ilimitada.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/chicago_typewriter.jpg" alt="chicago">
+                <h2>Chicago Typewriter</h2>
+                <p>A arma mais poderosa: possui alto poder de fogo e munição ilimitada. Para possibilitar sua compra, é necessário terminar apenas o Assignment Ada (no caso do Game Cube) ou o Separate Ways (para a versão PS2) para tê-la com Leon. Para utilizá-la com Ada (apenas na versão PS2), termine o modo Assignment Ada.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/prl_412.jpg" alt="prl">
+                <h2>P.R.L. 412</h2>
+                <p>Arma ausente na versão GameCube, é habilitada ao finalizar o modo Professional e não precisa de munição. Tem um funcionamento bem diferenciado, sendo possível aplicar dois tipos do tiro. O primeiro é possível ser executado quando a barra de eletricidade atingir o nível mínimo, provocando um efeito semelhante ao da Flash Grenade, matando Plagas imediatamente. O segundo tiro é executado quando o nível de eletricidade está no máximo, disparando um raio capaz de matar a maioria dos inimigos instantaneamente.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

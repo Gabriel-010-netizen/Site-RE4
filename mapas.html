@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/Chrisbanks2-Cold-Fusion-Hd-Umbrella-corp.128.png" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <audio id="musica" loop>
+    <source src="audio/Resident Evil 4 Save Theme (Extended).mp3" type="audio/mpeg">
+</audio>
+
+<button id="botao-musica" onclick="toggleMusica()">
+    🔊 TRILHA SONORA: OFF
+</button>
+
+<script>
+    const musica = document.getElementById("musica");
+    const botao = document.getElementById("botao-musica");
+
+    function toggleMusica() {
+        if (musica.paused) {
+            musica.play();
+            botao.textContent = "🔊 TRILHA SONORA: ON";
+        } else {
+            musica.pause();
+            botao.textContent = "🔇 TRILHA SONORA: OFF";
+        }
+    }
+</script>
+      <div class="categoria-armas">     
+    <a href="index.html" class="btn-explorar2">VOLTAR A PÁGINA PRINCIPAL</a>
+    <a href="explorar.html" class="btn-explorar2">VER PERSONAGENS</a>
+    <a href="armas.html" class="btn-explorar2">VER ARMAS DO JOGO</a>
+    <h2>Mapas</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="imagens/vilareijo.jpg" alt="Vilareijo">
+            <h2>Vilareijo</h2>
+            <p>A primeira grande região explorada por Leon. Um vilarejo aparentemente tranquilo, mas dominado pelos Ganados e pelos seguidores de Los Illuminados. É onde começa a missão de resgate de Ashley.</p>
+        </div>
+
+        <div class="card">
+            <img src="imagens/castelo.jpg" alt="Castelo">
+            <h2>Castelo</h2>
+            <p>enorme castelo de Ramon Salazar, localizado após a região da vila. Leon enfrenta novos inimigos e armadilhas enquanto avança pelas áreas do castelo em busca de Ashley.</p>
+        </div>
+
+        <div class="card">
+            <img src="imagens/ilha.jpg" alt="ilha">
+            <h2>Ilha</h2>
+            <p>Uma instalação controlada pelos Illuminados e fortemente protegida por soldados. É a última grande região da aventura, onde Leon enfrenta alguns dos maiores desafios antes do confronto final.</p>
+        </div>
+    </div>
+        <p class="final">Obrigado por chegar até aqui! Espero que tenha gostado de explorar o universo de Resident Evil 4(;=;).</p>
+
+</div>
+</body>
+</html>
