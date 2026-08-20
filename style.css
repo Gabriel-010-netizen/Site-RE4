@@ -1,0 +1,176 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0B0D0C;
+    color: #E0E0D8;
+    background-image: linear-gradient(
+        rgba(11, 13, 12, 0.85),
+        rgba(11, 13, 12, 0.85)
+    ), url("imagens/vilareijo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1, h2 {
+    color: #B59A5A;
+}
+h1 {
+    padding: 20px 40px;
+}
+img {
+    width: 700px;
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    margin: 20px auto;
+
+}
+
+.btn-explorar {
+    display: flex;
+    background-color: #8b0000;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content:center ;
+}
+.btn-explorar2 {
+    display: inline-block;
+    background-color: #8b0000;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    align-items: center;
+    justify-content:center ;
+}
+.btn-explorar:hover {
+    background-color: #b30000;
+}
+.btn-explorar2:hover {
+    background-color: #b30000;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.capa {
+    text-align: center;
+}
+.titulo a {
+    background-color: #8b0000;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.titulo a:hover {
+    background-color: #b30000;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+section p {
+    max-width: 1000px;
+    line-height: 1.6;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #000;
+    text-align: center;
+}
+ .categoria-armas h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #c9a227;
+}
+
+.card p {
+    color: #ddd;
+    padding: 0 15px 15px;
+}
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+a {
+    display: flex;
+}
+
+#botao-musica {
+    background-color: #0B0D0C;
+    color: #E0E0D8;
+
+    border: 1px solid #596B45;
+    padding: 12px 22px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow: 0 0 8px rgba(89, 107, 69, 0.3);
+}
+
+#botao-musica:hover {
+    background-color: #596B45;
+    color: #0B0D0C;
+
+    box-shadow: 0 0 15px rgba(89, 107, 69, 0.6);
+    transform: scale(1.03);
+}
+
+#botao-musica:active {
+    transform: scale(0.98);
+}
+
+#botao-musica {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.final {
+    background-color: #111512;
+    color: #D8D8CC;
+    padding: 5px 15px;
+    display: block;
+    gap: 20px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 0 auto;
+
+}
